@@ -1,0 +1,8 @@
+{% if data.widget.title %}<header>{{ data.widget.title }}</header>{% endif %}
+<ul>
+    {%- set archive = data.widget._archive -%}
+    {%- set baseUrl = data.widget._page._url -%}
+    {%- for item in archive -%}
+    <li><a class="non-link" href="{{ baseUrl }}{{ item.path }}">{{ __(item.month) }} {{ item.year }}</a></li>
+    {%- endfor -%}
+</ul>

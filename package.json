@@ -1,0 +1,29 @@
+{
+  "name": "@kwsites/cms-blog-archive-widgets",
+  "description": "Widget to display a monthly archive of apostrophe-pieces",
+  "version": "0.0.0",
+  "author": "Steve King <steve@mydev.co>",
+  "contributors": [
+    {
+      "name": "Steve King",
+      "email": "steve@mydev.co"
+    }
+  ],
+  "scripts": {
+    "setup": "node ./scripts/setup"
+  },
+  "files": [
+    "index.js",
+    "public/**/*.*",
+    "views/**/*.*"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/kwsites/cms-blog-archive-widgets.git",
+  "peerDependencies": {
+    "lodash": "^3.10.1"
+  },
+  "dependencies": {
+    "@kwsites/promise-cache": "0.0.1",
+    "moment": "^2.22.1"
+  }
+}
